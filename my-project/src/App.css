@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+  user-select: text !important; /* Ensure text can be selected */
+  pointer-events: auto !important; /* Ensure elements are clickable/selectable */
+}
+body{
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-x: hidden;
+}
+.phone::before, .social::before{
+  content: "|";
+  padding: 0 6px;
+}
+.Banner_container{
+  background: linear-gradient(140deg, #FFFFFF 8%, #fff0dc 28%, #edf6ff 36%);
+}
+.Banner_container .left h1{
+  font-weight: 500;
+  font-size: 47.85px;
+  line-height: 60px;
+}
+.Banner_container .left p{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28.8px;
+}
+.Banner_container .left .stat span{
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 20px;
+  background: linear-gradient(140deg, #FFA229 10%, #1C4670 68%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+}
+.Banner_container .left .stat p{
+  font-family: "Lato", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.Banner_container::before{
+  content: url('./assets/layer.png');
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  /* width: 100%;  */
+  height: 100%;
+  /* display: block; */
+}
+.Banner_container .left .button{
+  font-weight: 700;
+  font-size: 16px;
+}
+.Companies_container h1{
+  font-size: 22px;
+  font-weight: 700;
+}
+.welcome{
+  font-weight: 400;
+  font-size: 14px;
+}
+.Services_container h1, .about_container h1, .WhyChoose_container h1{
+  font-weight: 700;
+  font-size: 32px;
+}
+.about_container p{
+  font-weight: 400;
+  font-size: 16px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px 80px;
+  /* position: relative; */
+}
+
+.card {
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 10px 0;
+  color: #333;
+}
+
+.card p {
+  font-size: 17.6px;
+  font-weight: 300;
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.card .learn-more {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card .learn-more span {
+  display: flex;
+  border: 2px solid black;
+  width: 5px;
+  height: 5px;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .learn-more span {
+  transform: translateX(5px);
+}
+.grid-container .card:nth-child(3n)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 1px;
+  height: 100%;
+  background: #ddd;
+}
+
+.grid-container .card:nth-child(3n)::after {
+  display: none; 
+}
+.about_container .right{
+  background: url(./assets/About.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 500px;
+  height: 300px; 
+}
+.WhyChoose_container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  place-items: center;
+}
+.WhyChoose_container .card{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #FCDDEC;
+}
+.Introduction_container h1{
+  font-weight: 700;
+  font-size: 34px;
+}
+.Introduction_container p{
+  font-weight: 400;
+  font-size: 16px;
+  color: #AAB5CD;
+}
+.Introduction_container .points .point h2{
+  font-weight: 700;
+  font-size: 22px;
+}
+.Introduction_container .right{
+  background: url(./assets/Infromation.jpg), rgba(0, 157, 255, 0.3);
+  width: 600px;
+  height: 400px;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+.logos {
+  width: 100%; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  background-color: white;
+  position: relative; /* For absolute positioning of circles */
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+/* Example styling for a circle */
+.circle1 {
+  background-color: #007bff; /* Blue */
+  top: 50px;
+  left: 100px;
+}
+
+/* Add similar styles for other circles with different colors and positions */
