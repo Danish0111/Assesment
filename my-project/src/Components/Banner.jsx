@@ -12,7 +12,7 @@ const Banner = () => {
     return (
         <>
             <div className="Banner_container h-[100vh] flex justify-center mx-auto">
-                <div className="left w-[50%] flex flex-col gap-6 pl-10 pt-14">
+                <div className="left sm:w-[100%] lg:w-[50%] flex flex-col gap-6 pl-10 pt-14">
                     <div className="rating flex items-center gap-2">
                         {/* <FontAwesomeIcon className='text-yellow-400' icon={faStar}/> */}
                         <img src={star} alt="" />
@@ -75,7 +75,7 @@ const Banner = () => {
                         </div>
                     </div>
                 </div>
-                <div className="right w-[50%] relative z-10 flex">
+                <div className="right w-[50%] relative z-10 hidden lg:flex">
                     <div className="img flex justify-center items-end">
                         <div className="img1 w-[750px] relative z-10 left-16">
                             <img className='w-[100%]' src={BannerImg} alt="" />

@@ -1,7 +1,6 @@
 import './App.css'
 import About from './Components/About'
 import Banner from './Components/Banner'
-import Clients from './Components/Clients'
 import Companies from './Components/Companies'
 import Introduction from './Components/Introduction'
 import Navbar from './Components/Navbar'
@@ -19,7 +18,6 @@ function App() {
       <About/>
       <WhyChoose/>
       <Introduction/>
-      <Clients/>
     </>
   )
 }

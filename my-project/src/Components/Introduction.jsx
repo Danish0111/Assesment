@@ -5,8 +5,8 @@ import youtube from '../assets/youtube.png'
 const Introduction = () => {
     return (
         <>
-            <div className="Introduction_container bg-[#1C4670] text-white flex justify-center items-center px-16 py-16 gap-10">
-                <div className="left w-[50%] flex flex-col justify-between">
+            <div className="Introduction_container bg-[#1C4670] text-white flex flex-col-reverse lg:flex-row justify-center items-center px-16 py-16 gap-10">
+                <div className="left w-[100%] lg:w-[50%] flex flex-col justify-between">
                     <h1>0ur Video Introductions</h1>
                     <p>Velit purus egestas tellus phasellus. Mattis eget sed faucibus magna vulputate pellentesque a diam tincidunt apis dui.</p>
                     <div className="points flex flex-col justify-between gap-6 py-8">

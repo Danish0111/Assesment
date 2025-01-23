@@ -161,6 +161,7 @@ body{
   width: 500px;
   height: 300px; 
 }
+
 .WhyChoose_container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -195,25 +196,27 @@ body{
   background-repeat: no-repeat;
   border-radius: 20px;
 }
-.logos {
-  width: 100%; /* Adjust width as needed */
-  height: 400px; /* Adjust height as needed */
-  background-color: white;
-  position: relative; /* For absolute positioning of circles */
+@media (max-width: 768px) {
+  .about_container .right{
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 300px; 
+  }
+  .Introduction_container .right{
+    width: 400px;
+    height: 300px;
+  }
+  .WhyChoose_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: center;
+  }
 }
-
-.circle {
-  position: absolute;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
+@media (max-width: 1024px) and (min-width: 768px) {
+  /* Styles for tablets */
 }
-
-/* Example styling for a circle */
-.circle1 {
-  background-color: #007bff; /* Blue */
-  top: 50px;
-  left: 100px;
+@media (max-width: 1440px) and (min-width: 1024px) {
+  /* Styles for laptops */
 }
-
-/* Add similar styles for other circles with different colors and positions */
