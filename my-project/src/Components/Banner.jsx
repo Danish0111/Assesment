@@ -11,8 +11,8 @@ import { faPlay, faStar } from '@fortawesome/free-solid-svg-icons';
 const Banner = () => {
     return (
         <>
-            <div className="Banner_container h-[100vh] flex justify-center mx-auto">
-                <div className="left sm:w-[100%] lg:w-[50%] flex flex-col gap-6 pl-10 pt-14">
+            <div className="Banner_container lg:h-[100vh] flex justify-center mx-auto">
+                <div className="left sm:w-[100%] lg:w-[50%] flex flex-col gap-6 px-2 md:pl-10 py-2 md:pt-14">
                     <div className="rating flex items-center gap-2">
                         {/* <FontAwesomeIcon className='text-yellow-400' icon={faStar}/> */}
                         <img src={star} alt="" />
@@ -26,8 +26,8 @@ const Banner = () => {
                         <span>for compliance business needs</span>
                     </h1>
                     <p className='w-[100%]'>An online business compliance platform that helps entrepreneurs and other individuals with various, registrations, tax filings, and other legal matters.</p>
-                    <section className="stats w-[100%] flex justify-between">
-                        <div className="stat flex  gap-2">
+                    <section className="stats w-[100%] flex justify-between gap-2 md:justify-start md:gap-16 lg:justify-between">
+                        <div className="stat flex flex-col lg:flex-row gap-2">
                             <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="42" height="42" fill="none" stroke="#5a5a5b" strokeWidth="2">
                                 <rect x="5" y="5" width="14" height="14" rx="2" />
                                 <rect x="23" y="5" width="14" height="14" rx="2" />
@@ -35,12 +35,12 @@ const Banner = () => {
                                 <rect x="23" y="23" width="14" height="14" rx="2" />
                             </svg>
                             </span>
-                            <div className="stat_text">
-                                <span className="value">4.5</span>
-                                <p className="description">Customer Rating</p>
+                            <div className="stat_text ">
+                                <span className="value text-sm lg:text-lg">4.5</span>
+                                <p className="description text-wrap">Customer Rating</p>
                             </div>
                         </div>
-                        <div className="stat flex  gap-2">
+                        <div className="stat flex flex-col lg:flex-row gap-2">
                             <span><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M23.996 19.2142C20.0977 19.2142 16.9243 16.0513 16.9243 12.1659C16.9243 8.28058 20.0977 5.12573 23.996 5.12573C27.8943 5.12573 31.0677 8.2886 31.0677 12.1739C31.0677 16.0593 27.8943 19.2221 23.996 19.2221V19.2142ZM23.996 7.02025C21.1447 7.02025 18.8331 9.33219 18.8331 12.1659C18.8331 14.9997 21.1528 17.3116 23.996 17.3116C26.8391 17.3116 29.1588 14.9997 29.1588 12.1659C29.1588 9.33219 26.8391 7.02025 23.996 7.02025Z" fill="#4F4F4F" />
                                 <path d="M38.945 19.2147C36.5448 19.2147 34.5957 17.272 34.5957 14.8798C34.5957 12.4875 36.5448 10.5449 38.945 10.5449C41.3452 10.5449 43.2943 12.4875 43.2943 14.8798C43.2943 17.272 41.3452 19.2147 38.945 19.2147ZM38.945 12.4394C37.5999 12.4394 36.4965 13.5312 36.4965 14.8798C36.4965 16.2285 37.5919 17.3202 38.945 17.3202C40.2981 17.3202 41.3935 16.2285 41.3935 14.8798C41.3935 13.5312 40.2981 12.4394 38.945 12.4394Z" fill="#4F4F4F" />
@@ -48,25 +48,25 @@ const Banner = () => {
                                 <path d="M9.0471 19.2147C6.6469 19.2147 4.69775 17.272 4.69775 14.8798C4.69775 12.4875 6.6469 10.5449 9.0471 10.5449C11.4473 10.5449 13.3964 12.4875 13.3964 14.8798C13.3964 17.272 11.4473 19.2147 9.0471 19.2147ZM9.0471 12.4394C7.70202 12.4394 6.59858 13.5312 6.59858 14.8798C6.59858 16.2285 7.69397 17.3202 9.0471 17.3202C10.4002 17.3202 11.4956 16.2285 11.4956 14.8798C11.4956 13.5312 10.4002 12.4394 9.0471 12.4394Z" fill="#4F4F4F" />
                             </svg>
                             </span>
-                            <div className="stat_text">
-                                <span className="value">20,000+</span>
-                                <p className="description">Clients</p>
+                            <div className="stat_text ">
+                                <span className="value text-sm lg:text-lg">20,000+</span>
+                                <p className="description text-wrap">Clients</p>
                             </div>
                         </div>
-                        <div className="stat flex  gap-2">
+                        <div className="stat flex flex-col lg:flex-row gap-2">
                             <span><svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.1635 41.253C18.2271 41.253 17.3282 40.8971 16.654 40.2417L4.73377 30.8403H1.87778C1.31595 30.8403 0.857117 30.3815 0.857117 29.8196V11.6162C0.857117 11.532 0.866481 11.4383 0.894572 11.354C1.00694 10.9046 1.41895 10.5956 1.87778 10.5956C1.96206 10.5956 2.04633 10.6049 2.13997 10.633L6.75637 11.8129L6.85937 11.7473C8.31077 10.839 12.0938 8.72282 15.6802 8.72282C16.5416 8.72282 17.3469 8.84456 18.0679 9.09738L18.2084 9.1442L18.3208 9.05992C20.1655 7.74898 22.2442 7.09351 24.5009 7.09351C26.0834 7.09351 27.7877 7.42124 29.5668 8.05799C32.9284 9.50003 38.8839 11.7942 40.7754 11.8972L45.8506 10.6049C45.9255 10.5862 46.0098 10.5768 46.0941 10.5768C46.3282 10.5768 46.5529 10.6518 46.7308 10.7922C46.993 10.9889 47.1428 11.2885 47.1428 11.6069V29.8196C47.1428 30.3815 46.684 30.8403 46.1222 30.8403H42.4047L39.3333 31.8048V32.0202C39.3614 32.685 39.1929 33.3405 38.8745 33.9117C38.2378 35.0353 37.0298 35.7376 35.7282 35.7376C35.1102 35.7376 34.4922 35.5784 33.9491 35.2694L33.6776 35.1102L33.5558 35.4005C32.9846 36.7302 31.683 37.5823 30.2316 37.5917C29.6043 37.5917 28.9862 37.4231 28.4338 37.1047L28.1622 36.9456L28.0405 37.2358C27.4693 38.5655 26.1584 39.427 24.7163 39.427C24.0889 39.427 23.4615 39.2584 22.9184 38.9401L22.6469 38.7809L22.5252 39.0712C22.3566 39.4738 22.1131 39.8296 21.8135 40.1387C21.1206 40.8503 20.1936 41.253 19.201 41.253H19.1635ZM15.5959 10.7829C12.3653 10.7829 8.70406 12.9834 8.00177 13.4328L7.8894 13.5077L6.17581 29.3795L17.9837 38.6685C17.9837 38.6685 18.0399 38.7153 18.0679 38.7434C18.377 39.0431 18.7796 39.2023 19.1916 39.2023C19.6036 39.2023 20.0063 39.0431 20.3059 38.7622C20.9239 38.1348 20.9239 37.1328 20.3059 36.5148L16.6259 32.8348C16.4386 32.6475 16.3263 32.3853 16.3263 32.1138C16.3263 31.8422 16.4293 31.5801 16.6259 31.4021C16.8226 31.2055 17.0754 31.1025 17.3469 31.1025C17.6185 31.1025 17.8713 31.2055 18.0679 31.4021L23.5646 36.9175C23.8923 37.2358 24.2856 37.395 24.6976 37.395C25.1096 37.395 25.531 37.2265 25.8306 36.9175C26.1209 36.6085 26.2801 36.2152 26.2801 35.7938C26.2801 35.3724 26.1022 34.9791 25.8025 34.6795L20.2685 29.1642C19.8658 28.7709 19.8658 28.1154 20.2685 27.7221C20.4651 27.5255 20.7179 27.4225 20.9895 27.4225C21.261 27.4225 21.5232 27.5255 21.7105 27.7221L29.0892 35.0821C29.3889 35.3724 29.7822 35.5316 30.1942 35.5316C30.6062 35.5316 30.9995 35.3724 31.2898 35.0915C31.9171 34.4829 31.9359 33.4809 31.3272 32.8535L23.9672 25.4748C23.6301 25.1002 23.6395 24.5103 23.9859 24.1264C24.1826 23.911 24.4541 23.7893 24.7444 23.7893C24.9972 23.7893 25.2407 23.8829 25.428 24.0515L34.6139 33.2375C34.923 33.5277 35.3162 33.6963 35.7376 33.6963C36.159 33.6963 36.5523 33.5371 36.8519 33.2468C37.4606 32.6288 37.4606 31.6175 36.8519 31.0089L24.2949 18.4612L24.0983 18.6298C22.3004 20.1748 20.5026 20.9614 18.7328 20.9614C17.4593 20.9614 16.2326 20.5588 15.0809 19.7722C13.2736 18.5268 12.7305 16.0734 13.8448 14.1819C14.4535 13.1519 15.1558 12.1781 15.9423 11.2698L16.3356 10.8109H15.6146L15.5959 10.7829ZM26.6734 13.0864C26.9168 13.0864 27.1509 13.1706 27.3382 13.3298C27.7596 13.695 27.8158 14.3411 27.4412 14.7719C26.9356 15.5023 26.4112 16.1671 25.8774 16.7757L25.6995 16.9724L38.2659 29.5387C38.3314 29.6043 38.3876 29.6698 38.4438 29.7447L38.5655 29.8946L41.1499 29.0893L39.9701 13.8355L39.7641 13.798C36.7021 13.2081 31.1212 10.9233 28.8645 9.96822C27.2914 9.40639 25.8306 9.12547 24.5009 9.12547C22.4877 9.12547 20.6524 9.77158 19.0605 11.045C19.0137 11.0919 18.9856 11.1106 18.9482 11.1387C17.5904 12.2998 16.4761 13.6669 15.6146 15.2026C15.0434 16.1577 15.3056 17.4125 16.2139 18.068C17.0005 18.6111 17.8432 18.8826 18.7047 18.8826C20.9333 18.8826 23.3117 17.1128 25.7651 13.6295C25.8119 13.5546 25.8493 13.4984 25.8868 13.4516C26.0834 13.2268 26.3644 13.0957 26.664 13.0957L26.6734 13.0864ZM41.974 13.6857L43.1445 28.7896H45.0828V12.9178L41.9833 13.695L41.974 13.6857ZM2.89845 28.8083H4.1813L5.81062 13.6669L2.89845 12.9178V28.8083Z" fill="#4F4F4F" />
                             </svg>
                             </span>
-                            <div className="stat_text">
-                                <span className="value">99.8%</span>
-                                <p className="description">Financial Stability</p>
+                            <div className="stat_text ">
+                                <span className="value text-sm lg:text-lg">99.8%</span>
+                                <p className="description text-wrap">Financial Stability</p>
                             </div>
                         </div>
                     </section>
                     <div className="flex gap-4">
                         <div className="button">
-                            <button type="button" className="text-white bg-[#1C4670] hover:bg-[#1C4670] font-medium rounded-md px-10 py-4 me-2 mb-2  focus:outline-none">Talk an Expert</button>
+                            <button type="button" className="text-white w-full bg-[#1C4670] hover:bg-[#1C4670] font-medium rounded-md p-2 lg:px-10 lg:py-4 me-2 mb-2  focus:outline-none">Talk an Expert</button>
                             {/* <button>Talk an Expert</button>/ */}
                         </div>
                         <div className="video flex items-center gap-1">
@@ -75,12 +75,12 @@ const Banner = () => {
                         </div>
                     </div>
                 </div>
-                <div className="right w-[50%] relative z-10 hidden lg:flex">
+                <div className="right w-[50%] lg:relative z-10 hidden lg:flex overflow-x-hidden">
                     <div className="img flex justify-center items-end">
-                        <div className="img1 w-[750px] relative z-10 left-16">
+                        <div className="img1 w-[750px] lg:relative z-10 left-16">
                             <img className='w-[100%]' src={BannerImg} alt="" />
                         </div>
-                        <div className="img2 relative z-10 right-28">
+                        <div className="img2 lg:relative z-10 right-28">
                             <img className='w-[100%]' src={target} alt="" />
                         </div>
                     </div>

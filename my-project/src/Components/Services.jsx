@@ -5,6 +5,7 @@ import vector3 from '../assets/vector3.png';
 import vector4 from '../assets/vector4.png';
 import vector5 from '../assets/vector5.png';
 import vector6 from '../assets/vector6.png';
+import arrow from '../assets/arrow.png';
 
 const Services = () => {
   return (
@@ -31,7 +32,7 @@ const Services = () => {
               href="#"
               className="learn-more font-semibold hover:underline"
             >
-              Learn More <span>&rarr;</span>
+              Learn More <span><img src={arrow} alt="" /></span>
             </a>
           </div>
           <div className="card flex flex-col justify-center items-center text-center p-6 border border-gray-200 rounded-lg bg-white shadow-md">
@@ -51,7 +52,7 @@ const Services = () => {
               href="#"
               className="learn-more font-semibold hover:underline"
             >
-              Learn More <span>&rarr;</span>
+              Learn More <span><img src={arrow} alt="" /></span>
             </a>
           </div>
           <div className="card flex flex-col justify-center items-center text-center p-6 border border-gray-200 rounded-lg bg-white shadow-md">
@@ -68,7 +69,7 @@ const Services = () => {
               href="#"
               className="learn-more font-semibold hover:underline"
             >
-              Learn More <span>&rarr;</span>
+              Learn More <span><img src={arrow} alt="" /></span>
             </a>
           </div>
           <div className="card flex flex-col justify-center items-center text-center p-6 border border-gray-200 rounded-lg bg-white shadow-md">
@@ -87,7 +88,7 @@ const Services = () => {
               href="#"
               className="learn-more font-semibold hover:underline"
             >
-              Learn More <span>&rarr;</span>
+              Learn More <span><img src={arrow} alt="" /></span>
             </a>
           </div>
           <div className="card flex flex-col justify-center items-center text-center p-6 border border-gray-200 rounded-lg bg-white shadow-md">
@@ -104,7 +105,7 @@ const Services = () => {
               href="#"
               className="learn-more font-semibold hover:underline"
             >
-              Learn More <span>&rarr;</span>
+              Learn More <span><img src={arrow} alt="" /></span>
             </a>
           </div>
           <div className="card flex flex-col justify-center items-center text-center p-6 border border-gray-200 rounded-lg bg-white shadow-md">
@@ -122,7 +123,7 @@ const Services = () => {
               href="#"
               className="learn-more font-semibold hover:underline"
             >
-              Learn More <span>&rarr;</span>
+              Learn More <span><img src={arrow} alt="" /></span>
             </a>
           </div>
         </div>

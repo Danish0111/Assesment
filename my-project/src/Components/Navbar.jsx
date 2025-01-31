@@ -22,13 +22,13 @@ const Navbar = () => {
   return (
     <>
       {/* Top Header */}
-      <div className="header bg-[#1C4670] text-white flex justify-end items-center gap-6 p-2 px-6 sm:px-20">
-        <span className="email flex items-center gap-2 text-sm">
-          <FontAwesomeIcon icon={faEnvelope} />
+      <div className="header bg-[#1C4670] text-white flex justify-end items-center md:gap-6 p-2 md:px-6 sm:px-20">
+        <span className="email flex items-center gap-2 text-xs md:text-sm">
+          <FontAwesomeIcon className='hidden md:block' icon={faEnvelope} />
           www.registerkaro.in
         </span>
-        <span className="phone flex items-center gap-2 text-sm">
-          <svg
+        <span className="phone flex items-center gap-2 text-xs md:text-sm">
+          <svg className='hidden md:block'
             width="15"
             height="15"
             viewBox="0 0 15 15"
@@ -42,7 +42,7 @@ const Navbar = () => {
           </svg>
           +918447746183
         </span>
-        <div className="social flex items-center gap-3 text-sm">
+        <div className="social flex items-center gap-3 text-xs md:text-sm">
           <FontAwesomeIcon icon={faInstagram} />
           <FontAwesomeIcon icon={faFacebook} />
           <FontAwesomeIcon icon={faTwitter} />
