@@ -33,7 +33,7 @@ function App() {
       <Blogs/>
       <Testimonials/>
       <Faqs/>
-      {/* <MobileApp/> */}
+      <MobileApp/>
       <Achievements/>
       <Email/>
       <CompanyIcons/>
