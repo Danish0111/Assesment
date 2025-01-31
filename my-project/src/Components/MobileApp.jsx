@@ -1,6 +1,6 @@
 import React from 'react'
-import phone1 from '../assets/phone1.png';
-import phone2 from '../assets/phone2.png';
+// import phone1 from '../assets/phone1.png';
+import phone from '../assets/phone.png';
 
 const MobileApp = () => {
     return (
@@ -49,11 +49,11 @@ const MobileApp = () => {
                 <div className="right w-[50%] hidden lg:flex justify-center items-end relative">
                     <div className="absolute left-0 bottom-0 w-[40%] h-full overflow-hidden">
                         <div className="phone1 absolute bottom-[-52%] w-[100%]">
-                            <img src={phone1} alt="Phone 1" className="w-full" />
+                            <img src={phone} alt="Phone 1" className="w-full" />
                         </div>
                     </div>
                     <div className="phone2 relative left-24 pt-7 w-[40%] ">
-                        <img src={phone2} alt="Phone 2" className="w-full" />
+                        <img src={phone} alt="Phone 2" className="w-full" />
                     </div>
                 </div>
             </div>
